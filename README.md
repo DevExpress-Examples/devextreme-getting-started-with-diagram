@@ -1,6 +1,6 @@
 # DevExtreme Diagram - Getting Started
 
-This repository stores code for the following DevExpress tutorial: [Getting Started with DevExtreme Diagram](https://js.devexpress.com/Documentation/Guide/UI_Components/Diagram/Getting_Started_with_Diagram/). The project creates a UI component that splits a page layout into multiple panes.
+This repository stores code for the following DevExpress tutorial: [Getting Started with DevExtreme Diagram](https://js.devexpress.com/Documentation/Guide/UI_Components/Diagram/Getting_Started_with_Diagram/). The project creates a UI component that supplies a visual interface to help you design new and modify existing diagrams.
 
 <div align="center"><img src="./Diagram.png" alt="Diagram" /></div>
 
