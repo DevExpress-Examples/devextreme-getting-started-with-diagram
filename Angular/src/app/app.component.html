@@ -1,45 +1,14 @@
-<dx-diagram
-  [height]="400"
-  customShapeTemplate="customShapeTemplate"
-  [simpleView]="true"
-  (onContentReady)="customFill()"
-  pageColor="#f0f0f0"
->
-  <dxi-custom-shape
-    *ngFor="let obj of projectTasks"
-    [type]="'task' + obj.ID"
-    baseType="rectangle"
-    [defaultWidth]="2.3"
-    [defaultHeight]="1"
-  >
-  </dxi-custom-shape>
-  <svg *dxTemplate="let item of 'customShapeTemplate'" class="template">
-    <text class="template-name" x="50%" y="40%">
-      {{ item.dataItem.Task_Name }}
-    </text>
-    <text x="50%" y="60%">
-      {{ item.dataItem.Description }}
-    </text>
-  </svg>
-  <dxo-nodes
-    [dataSource]="dataSource"
-    keyExpr="ID"
-    [typeExpr]="itemTypeExpr"
-    parentKeyExpr="Parent_ID"
-  >
+<dx-diagram [simpleView]="true" pageColor="#f0f0f0">
+  <dxo-nodes [dataSource]="dataSource" keyExpr="ID" parentKeyExpr="Parent_ID" textExpr="Task_Name">
   </dxo-nodes>
-    <dxo-zoom-level
-      [value]="0.75"
-      [items]="zoomItems"
-    >
-    </dxo-zoom-level>
-    <dxo-toolbox visibility="collapsed"></dxo-toolbox>
-    <dxo-properties-panel visibility="visible">
-      <dxi-tab>
-        <dxi-group
-          title="Object Properties"
-          [commands]="['lineStyle', 'lineColor', 'fillColor']"
-        ></dxi-group>
-      </dxi-tab>
-    </dxo-properties-panel>
+  <dxo-default-item-properties textStyle="font-family: 'Courier New', monospace;">
+  </dxo-default-item-properties>
+  <dxo-properties-panel>
+    <dxi-tab>
+      <dxi-group title="Object Properties" [commands]="objectCommands"></dxi-group>
+    </dxi-tab>
+  </dxo-properties-panel>
+  <dxo-toolbox [showSearch]="false">
+    <dxi-group category="general" [shapes]="['text', 'rectangle']"></dxi-group>
+  </dxo-toolbox>
 </dx-diagram>
