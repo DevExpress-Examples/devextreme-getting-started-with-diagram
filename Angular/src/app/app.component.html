@@ -1,3 +1,44 @@
-<div class="default-style">
-  <dx-button [text]="buttonText" (onClick)="onClick($event)"></dx-button>
+<div id="app-container">
+  <dx-diagram
+    id="diagram"
+    units="in"
+    [simpleView]="true"
+    [readOnly]="false"
+    [showGrid]="true"
+    [snapToGrid]="true"
+    [gridSize]="0.125"
+    viewUnits="in"
+    [zoomLevel]="1"
+    autoZoomMode="fitWidth"
+    [fullScreen]="false"
+    pageOrientation="landscape"
+    pageColor="#f4f4f4"
+    (onContentReady)="onContentReady()"
+  >
+    <dxo-nodes
+      [dataSource]="nodes"
+      keyExpr="id"
+      textExpr="text"
+      typeExpr="type"
+    ></dxo-nodes>
+    <dxo-edges
+      [dataSource]="edges"
+      keyExpr="id"
+      fromExpr="from"
+      toExpr="to"
+    ></dxo-edges>
+    <dxo-toolbox>
+      <dxi-group category="general"></dxi-group>
+      <dxi-group category="flowchart"></dxi-group>
+      <dxi-group category="orgChart"></dxi-group>
+      <dxi-group category="containers"></dxi-group>
+      <dxi-group category="custom"></dxi-group>
+    </dxo-toolbox>
+    <dxo-context-menu [enabled]="true"></dxo-context-menu>
+    <dxo-context-toolbox [enabled]="true"></dxo-context-toolbox>
+    <dxo-properties-panel visibility="auto"></dxo-properties-panel>
+    <dxo-history-toolbar [visible]="true"></dxo-history-toolbar>
+    <dxo-view-toolbar [visible]="true"></dxo-view-toolbar>
+    <dxo-main-toolbar [visible]="true"></dxo-main-toolbar>
+  </dx-diagram>
 </div>

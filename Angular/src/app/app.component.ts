@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ClickEvent } from 'devextreme/ui/button';
+import { DiagramNode, DiagramEdge } from './app.types';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +7,38 @@ import { ClickEvent } from 'devextreme/ui/button';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Angular';
+  nodes: DiagramNode[] = [
+    {
+      id: '1',
+      text: 'Development',
+      type: 'rectangle',
+    },
+    {
+      id: '2',
+      text: 'Testing',
+      type: 'rectangle',
+    },
+    {
+      id: '3',
+      text: 'Deployment',
+      type: 'rectangle',
+    },
+  ];
 
-  counter = 0;
+  edges: DiagramEdge[] = [
+    {
+      id: '1',
+      from: '1',
+      to: '2',
+    },
+    {
+      id: '2',
+      from: '2',
+      to: '3',
+    },
+  ];
 
-  buttonText = 'Click count: 0';
-
-  onClick(e: ClickEvent): void {
-    this.counter++;
-    this.buttonText = `Click count: ${this.counter}`;
+  onContentReady(): void {
+    // Diagram is ready
   }
 }
