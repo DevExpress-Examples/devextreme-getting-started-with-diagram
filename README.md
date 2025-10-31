@@ -1,5 +1,5 @@
 <!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/881863374/25.1.3%2B)
+![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/881863374/24.1.7%2B)
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1261312)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
@@ -8,7 +8,7 @@
 
 This repository stores code for the following DevExpress tutorial: [Getting Started with DevExtreme Diagram](https://js.devexpress.com/Documentation/Guide/UI_Components/Diagram/Getting_Started_with_Diagram/). The project creates a UI component that supplies a visual interface to help you design new and modify existing diagrams.
 
-<div align="center"><img src="./Diagram.png" alt="Diagram" /></div>
+<div align="center"><img src="images/Diagram.png" alt="Diagram" /></div>
 
 ## Files to Review
 
@@ -20,7 +20,7 @@ This repository stores code for the following DevExpress tutorial: [Getting Star
 - **Vue**
     - [Home.vue](Vue/src/components/HomeContent.vue)
 - **React**
-    - [App.js](React/src/App.js)
+    - [App.tsx](React/src/App.tsx)
 
 ## Documentation
 
