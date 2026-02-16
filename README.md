@@ -27,7 +27,7 @@ This repository stores code for the following DevExpress tutorial: [Getting Star
 - [Getting Started with Diagram](https://js.devexpress.com/Documentation/Guide/UI_Components/Diagram/Getting_Started_with_Diagram/)
 - [Diagram - API Reference](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDiagram/)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-getting-started-with-diagram&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=devextreme-getting-started-with-diagram&~~~was_helpful=no)
 
