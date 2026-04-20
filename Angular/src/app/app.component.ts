@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { DxDiagramModule } from 'devextreme-angular/ui/diagram';
 import { DiagramNode, DiagramEdge } from './app.types';
 
 @Component({
   selector: 'app-root',
+  imports: [DxDiagramModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
