@@ -15,30 +15,32 @@
     pageColor="#f4f4f4"
     (onContentReady)="onContentReady()"
   >
-    <dxo-nodes
+    <dxo-diagram-nodes
       [dataSource]="nodes"
       keyExpr="id"
       textExpr="text"
       typeExpr="type"
-    ></dxo-nodes>
-    <dxo-edges
+    ></dxo-diagram-nodes>
+    <dxo-diagram-edges
       [dataSource]="edges"
       keyExpr="id"
       fromExpr="from"
       toExpr="to"
-    ></dxo-edges>
-    <dxo-toolbox>
-      <dxi-group category="general"></dxi-group>
-      <dxi-group category="flowchart"></dxi-group>
-      <dxi-group category="orgChart"></dxi-group>
-      <dxi-group category="containers"></dxi-group>
-      <dxi-group category="custom"></dxi-group>
-    </dxo-toolbox>
-    <dxo-context-menu [enabled]="true"></dxo-context-menu>
-    <dxo-context-toolbox [enabled]="true"></dxo-context-toolbox>
-    <dxo-properties-panel visibility="auto"></dxo-properties-panel>
-    <dxo-history-toolbar [visible]="true"></dxo-history-toolbar>
-    <dxo-view-toolbar [visible]="true"></dxo-view-toolbar>
-    <dxo-main-toolbar [visible]="true"></dxo-main-toolbar>
+    ></dxo-diagram-edges>
+    <dxo-diagram-toolbox>
+      <dxi-diagram-group category="general"></dxi-diagram-group>
+      <dxi-diagram-group category="flowchart"></dxi-diagram-group>
+      <dxi-diagram-group category="orgChart"></dxi-diagram-group>
+      <dxi-diagram-group category="containers"></dxi-diagram-group>
+      <dxi-diagram-group category="custom"></dxi-diagram-group>
+    </dxo-diagram-toolbox>
+    <dxo-diagram-context-menu [enabled]="true"></dxo-diagram-context-menu>
+    <dxo-diagram-context-toolbox [enabled]="true"></dxo-diagram-context-toolbox>
+    <dxo-diagram-properties-panel
+      visibility="auto"
+    ></dxo-diagram-properties-panel>
+    <dxo-diagram-history-toolbar [visible]="true"></dxo-diagram-history-toolbar>
+    <dxo-diagram-view-toolbar [visible]="true"></dxo-diagram-view-toolbar>
+    <dxo-diagram-main-toolbar [visible]="true"></dxo-diagram-main-toolbar>
   </dx-diagram>
 </div>
