@@ -1,5 +1,5 @@
 $(() => {
-  const diagram = $('#diagram').dxDiagram({
+  const _diagram = $('#diagram').dxDiagram({
     units: 'in',
     pageOrientation: 'landscape',
     pageColor: '#f4f4f4',
