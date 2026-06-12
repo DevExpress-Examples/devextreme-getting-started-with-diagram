@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { DxDiagramModule } from 'devextreme-angular/ui/diagram';
 import { DiagramNode, DiagramEdge } from './app.types';
 
@@ -6,6 +6,7 @@ import { DiagramNode, DiagramEdge } from './app.types';
   selector: 'app-root',
   imports: [DxDiagramModule],
   templateUrl: './app.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
